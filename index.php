@@ -538,6 +538,39 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- code to submit the form -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("#contact-form").on("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      $.ajax({
+        url: "forms/contact.php",
+        type: "POST",
+        data: $(this).serialize(),
+        beforeSend: function () {
+          $(".loading").show();
+          $(".error-message").hide();
+          $(".sent-message").hide();
+        },
+        success: function (response) {
+          $(".loading").hide();
+          if (response === "success") {
+            $(".sent-message").show();
+            $("#contact-form")[0].reset();
+          } else {
+            $(".error-message").text(response).show();
+          }
+        },
+        error: function () {
+          $(".loading").hide();
+          $(".error-message").text("Something went wrong. Please try again.").show();
+        }
+      });
+    });
+  </script>
+
+
 </body>
 
 </html>
