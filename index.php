@@ -55,7 +55,7 @@
       <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    <a href="index.php" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Bheem Chand</h1>
@@ -403,7 +403,7 @@
                   <p>Running Room Management System Indian Railways</p>
                   <a href="assets/img/projects/rrms/1.png" title="App 1" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-rrms.html" title="More Details" class="details-link"><i
+                  <a href="portfolio-details-rrms.php" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -419,7 +419,7 @@
                   <a href="assets/img/projects/jodhpur station/Screenshot (779).png" title="Branding 1"
                     data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-jodhpur.html" title="More Details" class="details-link"><i
+                  <a href="portfolio-details-jodhpur.php" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -434,7 +434,7 @@
                   <a href="assets/img/projects/obhs/Screenshot (775).png" title="Product 1"
                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-obhs.html" title="More Details" class="details-link"><i
+                  <a href="portfolio-details-obhs.php" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
