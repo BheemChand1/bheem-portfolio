@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,10 +68,12 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
+              class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Deep Dropdown 1</a></li>
                 <li><a href="#">Deep Dropdown 2</a></li>
@@ -111,15 +115,15 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-12">
             <div class="portfolio-details-slider swiper init-swiper">
 
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
-                  "speed": 600,
+                  "speed": 400,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 4000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
@@ -133,42 +137,87 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
+                  <img src="assets/img/projects/obhs/Screenshot (774).png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
+                  <img src="assets/img/projects/obhs/Screenshot (775).png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
+                  <img src="assets/img/projects/obhs/Screenshot (798).png" alt="">
+                </div>
+
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/obhs/Screenshot (799).png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
+                  <img src="assets/img/projects/obhs/Screenshot (800).png" alt="">
                 </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/obhs/Screenshot (801).png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/obhs/Screenshot (802).png" alt="">
+                </div>
+
+
+
+
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-12">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
+                <li><strong>Project</strong>: OBHS (On board housekeeping service)</li>
+                <li><strong>Client</strong>: Indian Railway</li>
+                <li><strong>Admin URL</strong>: <a href="https://obhsfb.beatleme.co.in/">Admin</a></li>
+                <li><strong>App URL</strong>: <a
+                    href="https://play.google.com/store/apps/details?id=com.beatleOBHSFeedback&hl=en_IN">APP</a></li>
+
+
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <h2>OBHS Admin Panel & Mobile App</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                The OBHS (On Board Housekeeping Service) Admin Panel and Mobile App is a specialized digital solution
+                developed for the Indian Railways to streamline sanitation service monitoring and ensure cleanliness
+                onboard trains. This platform enables real-time tracking of housekeeping activities through an intuitive
+                admin panel and a mobile application used by onboard staff.
+                <br><br>
+                Key features of the system include:
+              <ul>
+                <li><strong>Attendance Tracking:</strong> Housekeeping staff mark attendance directly via the app, with
+                  geolocation and timestamp verification to ensure accuracy and authenticity.</li>
+                <li><strong>Photo-Based Reporting:</strong> Staff upload before-and-after photos of cleaned areas to
+                  provide visual proof of work completed. These reports are accessible to admins for review and quality
+                  checks.</li>
+                <li><strong>Passenger Feedback:</strong> Passengers can rate cleanliness, provide comments, and share
+                  their onboard experience through the app, ensuring continuous service evaluation and improvement.</li>
+              </ul>
+              <br>
+              <strong>Technologies Used:</strong> The platform is developed using <strong>PHP</strong>,
+              <strong>Laravel</strong>, <strong>MySQL</strong>, and <strong>Tailwind CSS</strong> to ensure scalable
+              backend performance and a clean, responsive user interface.
+              <br><br>
+              I was responsible for developing backend logic and APIs to support daily attendance logging, photo report
+              handling, and feedback collection, including user role management and real-time data synchronization
+              between the admin panel and mobile app.
               </p>
             </div>
+
+
+
+
           </div>
 
         </div>
@@ -183,21 +232,24 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+        </p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href="https://themewagon.com">ThemeWagon</a>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
