@@ -59,9 +59,9 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Bheem Chand</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Backend Developer, Frontend Developer">Web Developer</span></p>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+          class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
