@@ -25,31 +25,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP configuration
+        $mail->SMTPDebug = 2;                      // Debug level: 2 shows client/server messages
+        $mail->Debugoutput = 'html';               // Output format: 'html', 'echo', 'error_log', or a callable
         $mail->isSMTP();
-        $mail->Host = 'mail.bheemchand.com';           // Usually 'mail.yourdomain.com' for custom domains
+        $mail->Host = 'mail.bheemchand.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'support@bheemchand.com';     // Your domain email
-        $mail->Password = 'bheem@8126';                 // Email password (keep it secure)
-        $mail->SMTPSecure = 'tls';                      // Or 'ssl' if your hosting requires it
-        $mail->Port = 587;                              // Use 465 for SSL, 587 for TLS
+        $mail->Username = 'support@bheemchand.com';
+        $mail->Password = 'bheem@8126';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
-        // Sender and recipient
         $mail->setFrom('support@bheemchand.com', 'Website Contact Form');
-        $mail->addAddress('bheemchand8126@gmail.com');  // Your destination email
+        $mail->addAddress('bheemchand8126@gmail.com');
 
-
-        // Content
         $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body = "
-            <h3>New Contact Form Submission</h3>
-            <p><strong>Name:</strong> {$name}</p>
-            <p><strong>Email:</strong> {$email}</p>
-            <p><strong>Subject:</strong> {$subject}</p>
-            <p><strong>Message:</strong><br>{$message}</p>
-        ";
-
+        <h3>New Contact Form Submission</h3>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Subject:</strong> {$subject}</p>
+        <p><strong>Message:</strong><br>{$message}</p>
+    ";
         $mail->AltBody = strip_tags("Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message");
 
         $mail->send();
@@ -57,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (Exception $e) {
         echo "Mailer Error: " . $mail->ErrorInfo;
     }
+
 } else {
     echo "Invalid request.";
 }
